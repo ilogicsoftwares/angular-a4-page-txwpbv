@@ -1,0 +1,9 @@
+.block {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
