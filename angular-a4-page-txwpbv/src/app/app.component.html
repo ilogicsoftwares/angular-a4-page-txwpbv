@@ -1,0 +1,36 @@
+
+<app-paginated-view [pageSize]="'A4'">
+ 
+  <!-- render data inside paginated view -->
+  <ng-container>
+  
+     <!-- set #pageHeader to define a header  -->
+    <div #pageHeader  style="height: 5cm;">
+      <img src="../../../../../assets/img/logo.jpg" alt="" style="width: 200px;">
+      <p style="text-align:right;"><strong>{{date}}</strong></p>
+      <table style="margin-top:20px;">
+          <th>
+              Nombre
+          </th>
+          <th>
+              Apellido
+          </th>
+          <th>
+              DNI
+          </th>
+  
+  
+      </table>
+    </div>
+   
+       <!-- set #pageContent to define the content of page  -->
+      <p *ngFor="let item of items" #pageContent>{{item}}</p>
+      
+       <!-- set #pageFooter to define a footer  -->
+      <div  #pageFooter style="height: 2cm;">
+        footer 
+      </div>
+   
+  </ng-container>
+ 
+</app-paginated-view>
